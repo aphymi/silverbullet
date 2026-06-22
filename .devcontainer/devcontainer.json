@@ -1,0 +1,10 @@
+{
+  "name": "SilverBullet Dev",
+  "build": {
+    "dockerfile": "Containerfile"
+  },
+  "mounts": [
+    "source=/var/space,target=/var/space,type=bind"
+  ],
+  "postCreateCommand": "npm install"
+}
